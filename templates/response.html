@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+  
+  <title>Response</title>
+</head>
+
+<body>
+  
+   <h1> HELLO LISTENER !!</h1> 
+
+  <table style="width:60%" >
+    <thead>
+    <tr>
+      <th>Artist</th>
+      <th>Track name</th>
+      <th>Link</th>
+    </thead>
+    
+    </tr>
+
+
+    <tbody>
+      {% for i in content %}  
+
+
+    <tr style="text-align: center;">
+      <td>{{i['artistName']}}</td>
+      <td>{{i['trackName']}}</td>
+      <td><a href="{{i['previewUrl']}}" target="_blank"> Click & listen</a></td
+      >
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
+     
+
+      
+      
+  
+ 
+  
+</body>
+</html>
+
+
+
