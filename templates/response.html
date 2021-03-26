@@ -4,46 +4,80 @@
   <style>
     table, th, td {
       border: 1px solid black;
+      
+      
     }
-    </style>
+    body, html {
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 75%;
+    
+            }
+
+.bg {
+  /* The image used */
+  background-image: url("https://www.onholdinc.com/mohblog/wp-content/uploads/2019/09/music-news.jpg");
+  height: 100%;
   
-  <title>Response</title>
+  /* Full height */
+  /* display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0; */
+
+}
+    
+</style>
+
+
+<title>Response</title>
 </head>
+
+
+
 
 <body>
   
-   <h1> HELLO LISTENER !!</h1> 
 
-  <table style="width:60%" >
+   <h1 style="text-align: center;"> HELLO LISTENER !!</h1> 
+
+  <table style="width:100%"  >
     <thead>
-    <tr>
-      <th>Artist</th>
-      <th>Track name</th>
-      <th>Link</th>
+      <tr>
+      
+          <th style="color: rgb(0, 0, 0);">Artist</th>
+          <th style="color: rgb(0, 0, 0);">Track name</th>
+          <th style="color: rgb(0, 0, 0);">Link</th>
+     
+
+       </tr>
     </thead>
-    
-    </tr>
+  
+   
 
 
     <tbody>
       {% for i in content %}  
 
 
-    <tr style="text-align: center;">
+    <tr style="color: rgb(0, 0, 0); text-align:center ;">
       <td>{{i['artistName']}}</td>
       <td>{{i['trackName']}}</td>
-      <td><a href="{{i['previewUrl']}}" target="_blank"> Click & listen</a></td
-      >
-      </tr>
+      <td><a style="color: rgb(0, 0, 0);" href="{{i['previewUrl']}}" target="_blank"> Click & listen</a></td>
+    </tr>
       {%endfor%}
     </tbody>
   </table>
-     
+
+
+<div class="bg">        
 
       
       
   
- 
+</div>  
   
 </body>
 </html>
