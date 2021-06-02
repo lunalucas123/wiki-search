@@ -117,6 +117,10 @@ See results.
 
 ![](images/results.png)
 
+See JSON results. 
+
+![](images/JSON.png)
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
