@@ -70,7 +70,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Authenticated website for users to search for flights based on specific criteria. 
+ An alternative search for Wikipedia. 
 
 ![](images/homepage.png)
 
