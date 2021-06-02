@@ -1,7 +1,7 @@
 import requests
 import json
 from flask import Flask, redirect, url_for, render_template, request
-from flask import jsonify
+
 
 app = Flask(__name__)
 
@@ -18,11 +18,11 @@ def word_input():
 def wiki_search(word):
     word = word.lower()
     word = word[0].upper() + word[1:]
-    print(word)
+    # print(word)
   
     data = requests.get(f"https://en.wikipedia.org/w/api.php?action=parse&format=json&page={word}")
 
-    print(type(data)) # <class 'requests.models.Response'>
+    # print(type(data)) # <class 'requests.models.Response'>
 
 
     response_data = json.loads(data.text)
@@ -42,7 +42,7 @@ def wiki_search(word):
                 links_list.append(item[key])
 
     # json_response = response_data['parse']
-    print(type(iwlinks))
+    # print(type(iwlinks))
     
     return render_template("Results.html",results={'title': title, 'mylist':my_list, 'iwlinks' : links_list }, link = f"https://en.wikipedia.org/w/api.php?action=parse&format=json&page={word}")        
 
