@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title%}{%endblock%}
+{% block content%}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESULTS</title>
+</head>
+
+<br>
+<br>
+<br>
+<body>
+<center > 
+  
+  
+<h1>AXUALL WIKI-SEARCH </h1>
+<br>
+<br>
+
+<h2> Results for {{ results['title']}} </h2> 
+<br>
+<br>
+
+  {% if results['mylist'] %}
+
+  <h3>Wikipedia Links</h3>
+  
+      <ul class="list-unstyled" >
+        {%for i in results['iwlinks'] %}
+        
+        <li > <a href={{i}}>{{i}}</a> </li>
+    
+        {%endfor%}
+      </ul>
+  <h3>JSON Link</h3>
+  <a href={{link}} > JSON Format link</a>
+ {%else%}
+
+    <h1> No results </h1>
+
+  {%endif%}
+
+</body>
+</center>
+
+{% endblock %}
+
+
+
