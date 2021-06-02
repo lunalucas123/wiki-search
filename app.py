@@ -31,7 +31,7 @@ def wiki_search(word):
     
     title= response_data['parse']['title']
     my_list= response_data['parse']
-    j= response_data['parse']
+   
 
 
     iwlinks = response_data['parse']['iwlinks']
