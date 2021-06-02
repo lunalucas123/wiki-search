@@ -106,8 +106,6 @@ This is an example of how to list things you need to use the software and how to
    npm install
    ```
 
-
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -118,9 +116,6 @@ Search for any word .
 See results. 
 
 ![](images/results.png)
-
-
-
 
 
 <!-- CONTRIBUTING -->
@@ -139,42 +134,11 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-James Bellamy 
-</br>
-LinkedIn - https://www.linkedin.com/in/james-a-bellamy/
-</br>
-Github - https://github.com/dd8917vk
-
-Augie Karisch 
-</br>
-LinkedIn - https://www.linkedin.com/in/augiek/
-</br>
-Github - https://github.com/augiek
-
 Geovanny Molina Ordonez 
 </br>
 LinkedIn - https://www.linkedin.com/in/geovannymolinaordonez/
 </br>
 Github - https://github.com/lunalucas123
-
-Michael Rodriguez 
-</br>
-LinkedIn - https://www.linkedin.com/in/rodriguez-michael/
-</br>
-Github - https://github.com/rodriguez-michael
-
-Heather Salyer 
-</br>
-LinkedIn - https://www.linkedin.com/in/heathersalyer/
-</br>
-Github - https://github.com/heathersalyer
-</br>
-</br>
-Project Link: [https://github.com/mikeplatoon/travel_frontend](https://github.com/mikeplatoon/travel_frontend)
-
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
