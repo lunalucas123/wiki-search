@@ -1,52 +1,59 @@
-{% extends "base.html" %}
-
-{% block title%}{%endblock%}
-{% block content%}
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>RESULTS</title>
 </head>
 
 <br>
 <br>
-<br>
+
 <body>
 <center > 
   
   
 <h1>AXUALL WIKI-SEARCH </h1>
 <br>
-<br>
 
+<!-- searched word -->
 <h2> Results for {{ results['title']}} </h2> 
 <br>
+<h2>JSON : <a href={{link}} target="_blank"> JSON Format Link</a></h2>
+
 <br>
 
+<h2>Github : <a href= "https://github.com/lunalucas123/wiki-search" target="_blank">View Code Link</a></h2> 
+
+<br>
+
+  <!-- conditional rendering -->
   {% if results['mylist'] %}
 
-  <h3>Wikipedia Links</h3>
-  
-      <ul class="list-unstyled" >
-        {%for i in results['iwlinks'] %}
-        
-        <li > <a href={{i}}>{{i}}</a> </li>
-    
-        {%endfor%}
-      </ul>
-  <h3>JSON Link</h3>
-  <a href={{link}} > JSON Format link</a>
+            <h3>Wikipedia Links</h3>
+            <!-- looping thru list of links -->
+                <ul class="list-unstyled" >
+                  {%for i in results['iwlinks'] %}
+                  
+                  <li > <a href={{i}} target="_blank" >{{i}}</a> </li>
+              
+                  {%endfor%}
+                </ul>
+            
+            
+
  {%else%}
 
     <h1> No results </h1>
 
+
+
   {%endif%}
 
-</body>
+
 </center>
 
-{% endblock %}
+</body>
 
 
 
