@@ -78,8 +78,8 @@ Authenticated website for users to search for flights based on specific criteria
 ### Built With
 
 
-* [Python] - Used for back end with Python
-* [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Used web development
+* [Python](https://docs.python.org/3/) - Used to build WIKI-SEARCH with Python
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Used for front web development
 * [WIKIPEDIA API](https://www.mediawiki.org/wiki/API:Main_page) - Used as endpoint to collect desired data
 
 <!-- GETTING STARTED -->
